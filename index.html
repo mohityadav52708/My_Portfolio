@@ -1,66 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      /* Add styles for the rest of your content */
-    </style>
-  </head>
-  <body>
-    <div class="left-bar">
-      <div class="icons">
-        <i id="icon" class="fa-solid fa-house"></i>
-        <a id="Home" href="">Home</a>
-      </div>
-      <div class="icons">
-        <i id="icon" class="fa-solid fa-fire"></i>
-        <a id="Trending" href="">Trending</a>
-      </div>
-      <div class="icons">
-        <i id="icon" class="fa-solid fa-address-card"></i>
-        <a id="Contact" href="">Contact</a>
-      </div>
-      <div class="icons">
-        <i id="icon" class="fa-solid fa-code"></i>
-        <a id="Code" href="">Code</a>
-      </div>
-      <div class="social">
-        <p id="social_para">Socials</p>
-      </div>
-      <div class="icons">
-        <i id="Instagram" class="fa-brands fa-instagram"></i>
-        <a id="instagram_para" href="">Instagram</a>
-      </div>
-      <div class="icons">
-        <i id="Github" class="fa-brands fa-github"></i>
-        <a id="github_para" href="">Github</a>
-      </div>
-      <div class="icons">
-        <i id="Linkdein" class="fa-brands fa-linkedin-in"></i>
-        <a id="linkdein_para" href="">Linkdein</a>
-      </div>
-      <div class="icons">
-        <i id="Email" class="fa-regular fa-envelope"></i>
-        <a id="Email_para" href="">Email</a>
-      </div>
+  <style>
+    /* Add styles for the rest of your content */
+  </style>
+</head>
+
+<body>
+  <div class="left-bar">
+    <!-- Hamburger menu icon -->
+    <div id="menu-icon">&#9776;</div>
+
+    <div class="icons">
+      <i id="icon" class="fa-solid fa-house"></i>
+      <a id="Home" href="">Home</a>
+    </div>
+    <div class="icons">
+      <i id="icon" class="fa-solid fa-fire"></i>
+      <a id="Trending" href="">Trending</a>
+    </div>
+    <div class="icons">
+      <i id="icon" class="fa-solid fa-address-card"></i>
+      <a id="Contact" href="">Contact</a>
+    </div>
+    <div class="icons">
+      <i id="icon" class="fa-solid fa-code"></i>
+      <a id="Code" href="">Code</a>
+    </div>
+    <div class="social">
+      <p id="social_para">Socials</p>
+    </div>
+    <div class="icons">
+      <i id="Instagram" class="fa-brands fa-instagram"></i>
+      <a id="instagram_para" href="">Instagram</a>
+    </div>
+    <div class="icons">
+      <i id="Github" class="fa-brands fa-github"></i>
+      <a id="github_para" href="">Github</a>
+    </div>
+    <div class="icons">
+      <i id="Linkdein" class="fa-brands fa-linkedin-in"></i>
+      <a id="linkdein_para" href="">Linkdein</a>
+    </div>
+    <div class="icons">
+      <i id="Email" class="fa-regular fa-envelope"></i>
+      <a id="Email_para" href="">Email</a>
+    </div>
+  </div>
+
+  <div class="profile_cover">
+    <!-- Main content goes here -->
+    <div class="profile">
+      <img id="e" src="../img/5.png" alt="" />
+    </div>
+    <div class="name">
+      <b>
+        <p id="name">Mohit Yadav</p>
+      </b>
+      <b>
+        <p id="developer">@Developer</p>
+      </b>
     </div>
 
-    <div class="profile_cover">
-      <!-- Main content goes here -->
-      <div class="profile">
-        <img id="e" src="../img/5.png" alt="" />
+    <!-- Add more content if needed -->
+  </div>
+  <div class="box_cover">
+    <div class="boxes slideanim">
+      <a style="text-decoration: none;" href="index.html">
+        <div class="fourthbox">
+          <div class="thirdicon_first">
+            <div class="boxpara">
+              <h2>Healthcare System</h2>
+              <p>Developed a dynamic Healthcare System using Node.js, MongoDB, and HTML/CSS for effective data management and user interaction.
+                <br><button class="button">Read
+                  More</button></p>
+            </div>
+
+          </div><a>
       </div>
-      <div class="name">
-        <b><p id="name">Mohit Yadav</p></b>
-        <b><p id="developer">@Developer</p></b>
+      <a style="text-decoration: none;" href="index.html">
+        <div class="fourthbox">
+          <div class="thirdicon_first">
+            <div class="boxpara">
+              <h2>Beardo Clone</h2>
+              <p>Developed a responsive e-commerce website using HTML and CSS, mimicking the Beardo platform's layout and style for an immersive user experience.<br><button class="button">Read
+                  More</button></p>
+            </div>
+
+          </div><a>
       </div>
-      <!-- Add more content if needed -->
+      <a style="text-decoration: none;" href="index.html">
+        <div class="fourthbox">
+          <div class="thirdicon_first">
+            <div class="boxpara">
+              <h2>Foxtale Clone</h2>
+              <p>Implemented a responsive Foxtale Clone using HTML, CSS, and JavaScript for an engaging user experience. <br><button class="button">Read
+                  More</button></p>
+            </div>
+
+          </div><a>
+      </div>
+      <a style="text-decoration: none;" href="index.html">
+        <div class="fourthbox">
+          <div class="thirdicon_first">
+            <div class="boxpara">
+              <h2>Dribble Clone</h2>
+              <p>Crafted a Dribble Clone using React, HTML, CSS, and JavaScript to replicate the platform's design and interactivity.<br><button class="button">Read
+                  More</button></p>
+            </div>
+
+          </div><a>
+      </div>
+    
+      <a style="text-decoration: none;" href="index.html">
+        <div class="fourthbox">
+          <div class="thirdicon_first">
+            <div class="boxpara">
+              <h2>AI Informer</h2>
+              <p>Developed an informative web application using HTML, CSS, and JavaScript, providing insights into Artificial Intelligence technologies. <br><button class="button">Read
+                  More</button></p>
+            </div>
+
+          </div><a>
+      </div>
+      <a style="text-decoration: none;" href="index.html">
+        <div class="fourthbox">
+          <div class="thirdicon_first">
+            <div class="boxpara">
+              <h2>Weather Forcast</h2>
+              <p>Harnessing APIs, our project blends HTML, CSS, and JavaScript to deliver a user-friendly
+                weather forecasting application. <br><button class="button">Read
+                  More</button></p>
+            </div>
+
+          </div><a>
+        </div>
+
     </div>
-  </body>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const leftBar = document.querySelector(".left-bar");
+      const menuIcon = document.getElementById("menu-icon");
+
+      menuIcon.addEventListener("click", () => {
+        leftBar.classList.toggle("show-left-bar");
+      });
+    });
+  </script>
+</body>
+
 </html>
