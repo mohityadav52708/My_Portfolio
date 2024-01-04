@@ -1,75 +1,128 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Disable horizontal scroll for the entire body */
-    background: #14131a;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Disable horizontal scroll for the entire body */
+  background: #14131a;
+}
 
-  #left-bar {
-    position: fixed; /* Fixed position */
-    left: 30px;
-    top: 20px;
-    bottom: 0;
-    width: 270px; /* Adjust the width as needed */
-    background-color: #1c1b23;
-    color: #fff;
-    padding: 20px;
-    padding-left: 20px;
-    box-sizing: border-box;
-    border-top-right-radius: 8px;
-    overflow-y: auto; /* Enable vertical scroll for the left bar if needed */
-  }
+.left-bar {
+  position: fixed; /* Fixed position */
+  left: 30px;
+  top: 20px;
+  bottom: 0;
+  width: 270px; /* Adjust the width as needed */
+  background-color: #1c1b23;
+  color: #fff;
+  padding: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-top-right-radius: 8px;
+  overflow-y: auto; /* Enable vertical scroll for the left bar if needed */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .profile_cover { /* Adjust the margin to make room for the left bar */
-    padding: 20px;
-    height: 200px;
-    width: 100%;
-    padding-top: 20px;
-    display: flex;
-   margin-left: 300px;
-   align-items: center;
-  }
-  #e{
-    height: 130px;
-    width: 130px; 
-    border-radius: 50%;
-    margin: 13px;
-  }
-  .profile{
-    display: flex;
-  }
-  
-  .profile::before{
-    height: 130px;
-    width: 100%;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    content: "";
-    position: absolute;
-    left: 0;
-    margin-left: 320px;
-    background-image: url(./img/profile_div_cover.jpeg);
-    background-size: cover;
-    filter: blur(4px);
-    padding-top: 20px;
-    z-index: -1;
-  }
-  .name{
-    width: 20%;
-    height: 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .name #name{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.875rem;
-    font-size: 30px;
-  }
-  .name #developer{
-    color: #fff;
-    margin-top: -15px;
-  }
+.profile_cover { /* Adjust the margin to make room for the left bar */
+  padding: 20px;
+  height: 200px;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+ margin-left: 300px;
+ align-items: center;
+}
+#e{
+  height: 130px;
+  width: 130px; 
+  border-radius: 50%;
+  margin: 13px;
+}
+.profile{
+  display: flex;
+}
+
+.profile::before{
+  height: 130px;
+  width: 100%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-left: 320px;
+  background-image: url(./img/profile_div_cover.jpeg);
+  background-size: cover;
+  filter: blur(4px);
+  padding-top: 20px;
+  z-index: -1;
+}
+.name{
+  width: 20%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name #name{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.875rem;
+  font-size: 30px;
+}
+.name #developer{
+  color: #fff;
+  margin-top: -15px;
+}
+.left-bar .icons{
+width: 150px;
+display: flex;
+align-content: center;
+margin-left: -50px;
+padding: 20px;
+}
+.left-bar .icons i{
+font-size: 20px;
+padding-right: 25px;
+color: #8b8a91;
+}
+.left-bar .icons a{
+text-decoration: none;
+color: #8b8a91;
+font-size: 20px;
+/* padding-top: 1px; */
+}
+.left-bar .social{
+width: 150px;
+display: flex;
+align-content: center;
+flex-direction: column;
+margin-left: 0px;
+}
+.left-bar .social #social_para{
+margin-left: 10px;
+}
+.left-bar .social #social_para{
+color: #fff;
+font-size: 20px;
+margin-left: 30px;
+}
+.left-bar .icons #Instagram{
+font-size: 25px;
+color: rgb(205, 3, 158);
+}
+.left-bar .icons #Github{
+font-size: 25px;
+color: rgb(254, 252, 255);
+}
+.left-bar .icons #Linkdein{
+font-size: 25px;
+color: rgb(3, 78, 170);
+}
+.left-bar .icons #Email{
+font-size: 25px;
+color: #f55f45;
+}
