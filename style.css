@@ -174,10 +174,12 @@ color: #f55f45;
 }
 .thirdicon_first a i{
   text-decoration: none;
-  color: black;
-  font-size: 30px;
+  color: whitesmoke;
+  font-size: 25px;
 }
-
+.healthcare_beardo_buttons a button i:hover{
+  color: black;
+}
 .boxpara{
   color: white;
   font-family: 'Orbitron', sans-serif;
@@ -196,10 +198,10 @@ color: #f55f45;
 
 }
 .button{
-  width: 120px;
-  height: 40px;
-  /* font-size: 1.2vw; */
-  border-radius: 18px;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   background-color: aquamarine;
   margin-top: 20px;
   border-color: #2EDAF1;
@@ -214,6 +216,13 @@ color: #f55f45;
       background-color: aqua;
       transition: 0.3s ease-in;
 } 
+#playbutton_healthcare_beardo_button .button:hover{
+  color: black;
+}
+.button i{
+  text-decoration: none;
+  color: whitesmoke;
+}
 .box_cover{
   margin-left: 150px;
   width: 100%;
@@ -232,7 +241,7 @@ color: #f55f45;
   .firstbox, .secondbox, .thirdbox, .fourthbox {
     width: 40%;
     margin: 20px 5%;
-    height: auto;
+    height: 260px;
   }
 
   .box_cover {
@@ -250,7 +259,8 @@ color: #f55f45;
   .firstbox, .secondbox, .thirdbox, .fourthbox {
     width: 80%;
     margin: 20px 0;
-    height: auto;
+    height: 260px;
+    padding: 29px 29px 12px 40px;
   }
 
   .box_cover {
@@ -262,52 +272,131 @@ color: #f55f45;
 /* Add this to the end of your existing CSS */
 
 /* Responsive styles for left bar */
+/* Add this to the beginning of your existing CSS */
+#menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  display: none; /* Initially hide the icon on larger screens */
+}
+
+/* Show the icon on smaller screens */
+@media only screen and (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .left-bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    background-color: #1c1b23;
+    color: #fff;
+    padding: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top-right-radius: 8px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  .show-left-bar {
+    display: flex;
+  }
+
+  .left-bar .icons {
+    margin-left: 0;
+  }
+  .profile::before {
+    height: 130px;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url(./img/profile_div_cover.jpeg);
+    background-size: cover;
+    filter: blur(4px);
+    padding-top: 20px;
+    z-index: -1;
+    margin-left: 0px;
+}
+.profile_cover{
+  margin-left: 0px;
+  padding: 0px;
+}
+.name {
+  width: 25%;
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.name #developer{
+  margin-top: -5px;
+}
+.name #name{
+  font-size: 14px;
+}
+}
+
+/* Add this to the end of your existing CSS */
+/* Hamburger menu icon styling */
+#menu-icon {
+  font-size: 35px;
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+  top: 0px;
+  margin-left: 65px;
+  color: #fff;
+}
+
+#menu-icon:hover {
+  opacity: 0.8;
+}
+
+/* Responsive styles for left bar */
 .left-bar {
   transition: 0.3s; /* Smooth transition for better user experience */
 }
 
 .left-bar.show-left-bar {
-  width: 270px; /* Adjust the width as needed */
+  width: 70%; /* Adjust the width to cover the entire screen */
+}
+.healthcare_beardo_buttons{
+  display: flex;
+  margin-top: -25px;
+  height: 100px;
+}
+.healthcare_beardo_buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
-#menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  display: none; /* Initially hide the menu icon on larger screens */
+.button:hover {
+  background-color: aqua;
 }
 
-/* Add this to the beginning of your existing CSS */
-@media only screen and (max-width: 768px) {
-  .left-bar {
-    width: 0; /* Initially hide the left bar on smaller screens */
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #1c1b23;
-    z-index: 1;
-    padding-top: 60px;
-  }
+.button i {
+  color: white; 
+}
 
-  #menu-icon {
-    display: block; /* Show the menu icon on smaller screens */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: #fff;
-  }
-
-  .left-bar .icons {
-    width: 100%;
-    text-align: center;
-  }
-
-  .left-bar .icons i {
-    display: block;
-    margin: 10px auto;
-  }
+.button:hover i {
+  color: black; /* Change the color of the icon on hover */
+}
+.healthcare_beardo_buttons #code_healthcare_beardo{
+  margin-left: 40px;
+}
+#bottom_box{
+  margin-top: 5px;
 }
