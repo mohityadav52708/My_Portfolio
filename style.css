@@ -474,6 +474,18 @@ body {
 
 }
 .skills_cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills_cover h1{
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+.coverof_skills{
   /* margin-left: 150px; */
   width: 80%;
   display: flex;
@@ -537,7 +549,7 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-  .skills_cover {
+  .coverof_skills {
     margin-left: 0;
     width: 100%;
   }
