@@ -434,7 +434,12 @@ body {
   margin-top: 5px;
 }
 
-
+.left-bar .icons:hover{
+  transform: translateY(-10px);
+  transition-duration: .3s;
+  transition: 0.7s;
+  cursor: pointer;
+}
 
  
 @media only screen and (max-width: 1200px) {
@@ -568,4 +573,148 @@ body {
     margin-top: 25px;
     margin-left: 15px;
 }
+}
+
+.certification {
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.certification_cover {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.certification h1{
+  color: whitesmoke;
+  text-align: center;
+}
+.certification_boxes{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_certification_box{
+  
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.second_certification_box{
+ 
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.third_certification_box{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.fourth_certification_box{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.project-front,
+.project-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  /* border-top-right-radius: 90px; */
+}
+.project-front:hover{
+  box-shadow: 0 8px 16px rgb(255, 255, 255);
+
+}
+.project-back:hover{
+  box-shadow: 0 8px 16px rgb(255, 255, 255);
+
+}
+.project-card:hover .project-front {
+  transform: rotateY(180deg);
+}
+
+.project-card:hover .project-back {
+  /* border-top-left-radius: 106px; */
+  /* border-top-right-radius: 0px; */
+  transform: rotateY(0deg);
+}
+
+.project-front {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-back {
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-front h2,
+.project-back a {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.project-front p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 30.2px;
+  margin-top: 0;
+}
+
+.project-back a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00cbfe;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project-back a:hover {
+  background-color: #2980b9;
+  color: #ffff;
+}
+@media only screen and (max-width: 768px) {
+  .certification{
+    margin-left: 0px;
+  }
+  .certification_boxes{
+    width: 100%;
+  }
+  .project-card{
+    width: 305px;
+  }
+  .first_certification_box,.second_certification_box,.third_certification_box{
+    margin-left: 0px;
+  }
 }

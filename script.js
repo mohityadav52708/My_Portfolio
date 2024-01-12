@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const leftBar = document.getElementById("leftBar");
-    const menuIcon = document.getElementById("menu-icon");
+  const leftBar = document.getElementById("leftBar");
+  const menuIcon = document.getElementById("menu-icon");
 
-    menuIcon.addEventListener("click", () => {
-      leftBar.classList.toggle("show-left-bar");
-    });
-  });    
+  menuIcon.addEventListener("click", () => {
+    leftBar.classList.toggle("show-left-bar");
+  });
 
-const nav = document.querySelector("nav"),
-        toggleBtn = nav.querySelector(".toggle-btn");
+  document.addEventListener("click", (event) => {
+    const target = event.target;
 
-    toggleBtn.addEventListener("click" , () =>{
-      nav.classList.toggle("open");
-    });
+    // Check if the clicked element is not part of the left bar or the menu icon
+    if (target !== leftBar && !leftBar.contains(target) && target !== menuIcon) {
+      leftBar.classList.remove("show-left-bar");
+    }
+  });
+});
+
 
   // js code to make draggable nav
   function onDrag({movementY}) { //movementY gets mouse vertical value
