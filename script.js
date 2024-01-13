@@ -43,3 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.removeEventListener("mousemove", onDrag);
   });
 
+
+  function replaceEmail() {
+    const emailLink = document.getElementById("Email_para");
+    const emailAddress = "mohityadav.udl@gmail.com"; // Replace this with your actual email
+  
+    emailLink.href = "mailto:" + emailAddress;
+    emailLink.removeAttribute("onclick"); // Remove the onclick attribute after setting the email
+  }
+  
