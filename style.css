@@ -704,6 +704,24 @@ body {
   background-color: #2980b9;
   color: #ffff;
 }
+.main_first_project{
+  width: 220px;
+  height: 220px;
+  margin-left: 20px;
+}
+.circlebox{
+  border-radius: 50%;
+}
+.main_second_project{
+  width: 220px;
+  height: 220px;
+  margin-left: 20px;
+}
+.main_third_project{
+  width: 220px;
+  height: 220px;
+  margin-left: 20px;
+}
 @media only screen and (max-width: 768px) {
   .certification{
     margin-left: 0px;
@@ -758,5 +776,26 @@ body {
   }
   .contact_cover p{
     font-size: 15px;
+  }
+  .main_first_project{
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .circlebox{
+    border-radius: 50%;
+  }
+  .main_second_project{
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .main_third_project{
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 0px;
   }
 }
